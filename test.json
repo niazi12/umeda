@@ -1,0 +1,635 @@
+{
+    "stockx": {
+        "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+        "styleId": "M20325"
+    },
+    "goat": {
+        "catalog_id": "stan-smith-shoes-m20325",
+        "name": "Stan Smith 'Core White'",
+        "sku": "M20325",
+        "product_category": "PRODUCT_CATEGORY_SHOES",
+        "product_type": "sneakers"
+    },
+    "_id": "68329ade05f4dc596c90d021",
+    "title": "adidas Stan Smith Core White New Navy",
+    "brand": "adidas",
+    "normalizedStyleId": "M20325",
+    "styleId": "M20325",
+    "urlKey": "adidas-stan-smith-core-white-new-navy",
+    "productAttributes": {
+        "color": null,
+        "gender": "men",
+        "releaseDate": "2022-12-14",
+        "retailPrice": null,
+        "season": null,
+        "colorway": "Core White/Core White/New Navy",
+        "category": "sneakers",
+        "_id": "68329ade05f4dc596c90d022"
+    },
+    "platform": ["stockx", "goat"],
+    "createdAt": "2025-05-25T04:21:50.743Z",
+    "updatedAt": "2025-05-25T04:21:50.743Z",
+    "__v": 0,
+    "itemDetails": [
+        {
+            "source": {
+                "sheet_id": "1e7zs89KThbnoYRZ2RAN4CxwH0odsRVJrAruhLg62Z0U",
+                "sheet_name": "inventory sheet",
+                "row_number": 8795
+            },
+            "_id": "68329af1b5e7c35393255545",
+            "upc": "887383687659",
+            "__v": 0,
+            "createdAt": "2025-05-25T04:22:09.969Z",
+            "id": "8216",
+            "inventory_added_at": "2025-03-03T18:00:00.000Z",
+            "location": ["WBH1"],
+            "platforms_available": ["stockx", "goat"],
+            "product": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "styleId": "M20325"
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325",
+                    "name": "Stan Smith 'Core White'",
+                    "sku": "M20325",
+                    "product_category": "PRODUCT_CATEGORY_SHOES",
+                    "product_type": "sneakers"
+                },
+                "_id": "68329ade05f4dc596c90d021",
+                "title": "adidas Stan Smith Core White New Navy",
+                "brand": "adidas",
+                "normalizedStyleId": "M20325",
+                "styleId": "M20325",
+                "urlKey": "adidas-stan-smith-core-white-new-navy",
+                "productAttributes": {
+                    "color": null,
+                    "gender": "men",
+                    "releaseDate": "2022-12-14",
+                    "retailPrice": null,
+                    "season": null,
+                    "colorway": "Core White/Core White/New Navy",
+                    "category": "sneakers",
+                    "_id": "68329ade05f4dc596c90d022"
+                },
+                "platform": ["stockx", "goat"],
+                "createdAt": "2025-05-25T04:21:50.743Z",
+                "updatedAt": "2025-05-25T04:21:50.743Z",
+                "__v": 0
+            },
+            "quantity": 15,
+            "retail_price": 95,
+            "updatedAt": "2025-05-25T10:31:21.972Z",
+            "variant": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "variantId": "8744c37a-d681-4e5c-8f76-8451fffbd071",
+                    "variantName": "adidas-Stan-Smith-Core-White-New-Navy:14",
+                    "variantValue": "11",
+                    "sizeChart": {
+                        "defaultConversion": {
+                            "size": "11",
+                            "type": "us m"
+                        },
+                        "availableConversions": [
+                            {
+                                "size": "US M 11",
+                                "type": "us m"
+                            },
+                            {
+                                "size": "UK 10.5",
+                                "type": "uk"
+                            },
+                            {
+                                "size": "CM 29",
+                                "type": "cm"
+                            },
+                            {
+                                "size": "KR 290",
+                                "type": "kr"
+                            },
+                            {
+                                "size": "EU 45 1/3",
+                                "type": "eu"
+                            },
+                            {
+                                "size": "US W 12",
+                                "type": "us w"
+                            }
+                        ]
+                    }
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325"
+                },
+                "_id": "68329adfb5e7c3539325552f",
+                "product": "68329ade05f4dc596c90d021",
+                "__v": 0,
+                "createdAt": "2025-05-25T04:21:51.859Z",
+                "styleId": "M20325",
+                "updatedAt": "2025-05-25T04:22:14.302Z"
+            }
+        },
+        {
+            "source": {
+                "sheet_id": "1e7zs89KThbnoYRZ2RAN4CxwH0odsRVJrAruhLg62Z0U",
+                "sheet_name": "inventory sheet",
+                "row_number": 8794
+            },
+            "_id": "68329aefb5e7c35393255544",
+            "upc": "887383687642",
+            "__v": 0,
+            "createdAt": "2025-05-25T04:22:07.653Z",
+            "id": "8215",
+            "inventory_added_at": "2025-03-03T18:00:00.000Z",
+            "location": ["WBH1"],
+            "platforms_available": ["stockx", "goat"],
+            "product": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "styleId": "M20325"
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325",
+                    "name": "Stan Smith 'Core White'",
+                    "sku": "M20325",
+                    "product_category": "PRODUCT_CATEGORY_SHOES",
+                    "product_type": "sneakers"
+                },
+                "_id": "68329ade05f4dc596c90d021",
+                "title": "adidas Stan Smith Core White New Navy",
+                "brand": "adidas",
+                "normalizedStyleId": "M20325",
+                "styleId": "M20325",
+                "urlKey": "adidas-stan-smith-core-white-new-navy",
+                "productAttributes": {
+                    "color": null,
+                    "gender": "men",
+                    "releaseDate": "2022-12-14",
+                    "retailPrice": null,
+                    "season": null,
+                    "colorway": "Core White/Core White/New Navy",
+                    "category": "sneakers",
+                    "_id": "68329ade05f4dc596c90d022"
+                },
+                "platform": ["stockx", "goat"],
+                "createdAt": "2025-05-25T04:21:50.743Z",
+                "updatedAt": "2025-05-25T04:21:50.743Z",
+                "__v": 0
+            },
+            "quantity": 11,
+            "retail_price": 95,
+            "updatedAt": "2025-05-25T10:31:21.267Z",
+            "variant": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "variantId": "31c8bb0d-b1e9-42de-ad8a-a87453e8b2e9",
+                    "variantName": "adidas-Stan-Smith-Core-White-New-Navy:13",
+                    "variantValue": "10.5",
+                    "sizeChart": {
+                        "defaultConversion": {
+                            "size": "10.5",
+                            "type": "us m"
+                        },
+                        "availableConversions": [
+                            {
+                                "size": "US M 10.5",
+                                "type": "us m"
+                            },
+                            {
+                                "size": "UK 10",
+                                "type": "uk"
+                            },
+                            {
+                                "size": "CM 28.5",
+                                "type": "cm"
+                            },
+                            {
+                                "size": "KR 285",
+                                "type": "kr"
+                            },
+                            {
+                                "size": "EU 44 2/3",
+                                "type": "eu"
+                            },
+                            {
+                                "size": "US W 11.5",
+                                "type": "us w"
+                            }
+                        ]
+                    }
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325"
+                },
+                "_id": "68329adfb5e7c3539325552e",
+                "product": "68329ade05f4dc596c90d021",
+                "__v": 0,
+                "createdAt": "2025-05-25T04:21:51.859Z",
+                "styleId": "M20325",
+                "updatedAt": "2025-05-25T04:22:14.302Z"
+            }
+        },
+        {
+            "source": {
+                "sheet_id": "1e7zs89KThbnoYRZ2RAN4CxwH0odsRVJrAruhLg62Z0U",
+                "sheet_name": "inventory sheet",
+                "row_number": 8792
+            },
+            "_id": "68329aeab5e7c35393255543",
+            "upc": "887383687628",
+            "__v": 0,
+            "createdAt": "2025-05-25T04:22:03.005Z",
+            "id": "8213",
+            "inventory_added_at": "2025-03-03T18:00:00.000Z",
+            "location": ["WBH1"],
+            "platforms_available": ["stockx", "goat"],
+            "product": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "styleId": "M20325"
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325",
+                    "name": "Stan Smith 'Core White'",
+                    "sku": "M20325",
+                    "product_category": "PRODUCT_CATEGORY_SHOES",
+                    "product_type": "sneakers"
+                },
+                "_id": "68329ade05f4dc596c90d021",
+                "title": "adidas Stan Smith Core White New Navy",
+                "brand": "adidas",
+                "normalizedStyleId": "M20325",
+                "styleId": "M20325",
+                "urlKey": "adidas-stan-smith-core-white-new-navy",
+                "productAttributes": {
+                    "color": null,
+                    "gender": "men",
+                    "releaseDate": "2022-12-14",
+                    "retailPrice": null,
+                    "season": null,
+                    "colorway": "Core White/Core White/New Navy",
+                    "category": "sneakers",
+                    "_id": "68329ade05f4dc596c90d022"
+                },
+                "platform": ["stockx", "goat"],
+                "createdAt": "2025-05-25T04:21:50.743Z",
+                "updatedAt": "2025-05-25T04:21:50.743Z",
+                "__v": 0
+            },
+            "quantity": 16,
+            "retail_price": 95,
+            "updatedAt": "2025-05-25T10:31:20.096Z",
+            "variant": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "variantId": "e0cd6dbe-283a-4d01-9d9c-ddfefb40527b",
+                    "variantName": "adidas-Stan-Smith-Core-White-New-Navy:11",
+                    "variantValue": "9.5",
+                    "sizeChart": {
+                        "defaultConversion": {
+                            "size": "9.5",
+                            "type": "us m"
+                        },
+                        "availableConversions": [
+                            {
+                                "size": "US M 9.5",
+                                "type": "us m"
+                            },
+                            {
+                                "size": "UK 9",
+                                "type": "uk"
+                            },
+                            {
+                                "size": "CM 27.5",
+                                "type": "cm"
+                            },
+                            {
+                                "size": "KR 275",
+                                "type": "kr"
+                            },
+                            {
+                                "size": "EU 43 1/3",
+                                "type": "eu"
+                            },
+                            {
+                                "size": "US W 10.5",
+                                "type": "us w"
+                            }
+                        ]
+                    }
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325"
+                },
+                "_id": "68329adfb5e7c3539325552c",
+                "product": "68329ade05f4dc596c90d021",
+                "__v": 0,
+                "createdAt": "2025-05-25T04:21:51.859Z",
+                "styleId": "M20325",
+                "updatedAt": "2025-05-25T04:22:14.302Z"
+            }
+        },
+        {
+            "source": {
+                "sheet_id": "1e7zs89KThbnoYRZ2RAN4CxwH0odsRVJrAruhLg62Z0U",
+                "sheet_name": "inventory sheet",
+                "row_number": 8791
+            },
+            "_id": "68329ae8b5e7c35393255542",
+            "upc": "887383687611",
+            "__v": 0,
+            "createdAt": "2025-05-25T04:22:00.150Z",
+            "id": "8212",
+            "inventory_added_at": "2025-03-03T18:00:00.000Z",
+            "location": ["WBH1"],
+            "platforms_available": ["stockx", "goat"],
+            "product": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "styleId": "M20325"
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325",
+                    "name": "Stan Smith 'Core White'",
+                    "sku": "M20325",
+                    "product_category": "PRODUCT_CATEGORY_SHOES",
+                    "product_type": "sneakers"
+                },
+                "_id": "68329ade05f4dc596c90d021",
+                "title": "adidas Stan Smith Core White New Navy",
+                "brand": "adidas",
+                "normalizedStyleId": "M20325",
+                "styleId": "M20325",
+                "urlKey": "adidas-stan-smith-core-white-new-navy",
+                "productAttributes": {
+                    "color": null,
+                    "gender": "men",
+                    "releaseDate": "2022-12-14",
+                    "retailPrice": null,
+                    "season": null,
+                    "colorway": "Core White/Core White/New Navy",
+                    "category": "sneakers",
+                    "_id": "68329ade05f4dc596c90d022"
+                },
+                "platform": ["stockx", "goat"],
+                "createdAt": "2025-05-25T04:21:50.743Z",
+                "updatedAt": "2025-05-25T04:21:50.743Z",
+                "__v": 0
+            },
+            "quantity": 16,
+            "retail_price": 95,
+            "updatedAt": "2025-05-25T10:31:19.393Z",
+            "variant": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "variantId": "b413d017-ccdf-4651-ae1b-d9e9bd4db29c",
+                    "variantName": "adidas-Stan-Smith-Core-White-New-Navy:10",
+                    "variantValue": "9",
+                    "sizeChart": {
+                        "defaultConversion": {
+                            "size": "9",
+                            "type": "us m"
+                        },
+                        "availableConversions": [
+                            {
+                                "size": "US M 9",
+                                "type": "us m"
+                            },
+                            {
+                                "size": "UK 8.5",
+                                "type": "uk"
+                            },
+                            {
+                                "size": "CM 27",
+                                "type": "cm"
+                            },
+                            {
+                                "size": "KR 270",
+                                "type": "kr"
+                            },
+                            {
+                                "size": "EU 42 2/3",
+                                "type": "eu"
+                            },
+                            {
+                                "size": "US W 10",
+                                "type": "us w"
+                            }
+                        ]
+                    }
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325"
+                },
+                "_id": "68329adfb5e7c3539325552b",
+                "product": "68329ade05f4dc596c90d021",
+                "__v": 0,
+                "createdAt": "2025-05-25T04:21:51.859Z",
+                "styleId": "M20325",
+                "updatedAt": "2025-05-25T04:22:14.302Z"
+            }
+        },
+        {
+            "source": {
+                "sheet_id": "1e7zs89KThbnoYRZ2RAN4CxwH0odsRVJrAruhLg62Z0U",
+                "sheet_name": "inventory sheet",
+                "row_number": 8788
+            },
+            "_id": "68329ae0b5e7c35393255541",
+            "upc": "887383687581",
+            "__v": 0,
+            "createdAt": "2025-05-25T04:21:52.988Z",
+            "id": "8209",
+            "inventory_added_at": "2025-03-03T18:00:00.000Z",
+            "location": ["WBH1"],
+            "platforms_available": ["stockx", "goat"],
+            "product": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "styleId": "M20325"
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325",
+                    "name": "Stan Smith 'Core White'",
+                    "sku": "M20325",
+                    "product_category": "PRODUCT_CATEGORY_SHOES",
+                    "product_type": "sneakers"
+                },
+                "_id": "68329ade05f4dc596c90d021",
+                "title": "adidas Stan Smith Core White New Navy",
+                "brand": "adidas",
+                "normalizedStyleId": "M20325",
+                "styleId": "M20325",
+                "urlKey": "adidas-stan-smith-core-white-new-navy",
+                "productAttributes": {
+                    "color": null,
+                    "gender": "men",
+                    "releaseDate": "2022-12-14",
+                    "retailPrice": null,
+                    "season": null,
+                    "colorway": "Core White/Core White/New Navy",
+                    "category": "sneakers",
+                    "_id": "68329ade05f4dc596c90d022"
+                },
+                "platform": ["stockx", "goat"],
+                "createdAt": "2025-05-25T04:21:50.743Z",
+                "updatedAt": "2025-05-25T04:21:50.743Z",
+                "__v": 0
+            },
+            "quantity": 13,
+            "retail_price": 95,
+            "updatedAt": "2025-05-25T10:31:17.521Z",
+            "variant": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "variantId": "a00731d0-79eb-45dc-b37c-ce546879fe5e",
+                    "variantName": "adidas-Stan-Smith-Core-White-New-Navy:7",
+                    "variantValue": "7.5",
+                    "sizeChart": {
+                        "defaultConversion": {
+                            "size": "7.5",
+                            "type": "us m"
+                        },
+                        "availableConversions": [
+                            {
+                                "size": "US M 7.5",
+                                "type": "us m"
+                            },
+                            {
+                                "size": "UK 7",
+                                "type": "uk"
+                            },
+                            {
+                                "size": "CM 25.5",
+                                "type": "cm"
+                            },
+                            {
+                                "size": "KR 255",
+                                "type": "kr"
+                            },
+                            {
+                                "size": "EU 40 2/3",
+                                "type": "eu"
+                            },
+                            {
+                                "size": "US W 8.5",
+                                "type": "us w"
+                            }
+                        ]
+                    }
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325"
+                },
+                "_id": "68329adfb5e7c3539325553e",
+                "product": "68329ade05f4dc596c90d021",
+                "__v": 0,
+                "createdAt": "2025-05-25T04:21:51.859Z",
+                "styleId": "M20325",
+                "updatedAt": "2025-05-25T04:22:14.302Z"
+            }
+        },
+        {
+            "source": {
+                "sheet_id": "1e7zs89KThbnoYRZ2RAN4CxwH0odsRVJrAruhLg62Z0U",
+                "sheet_name": "inventory sheet",
+                "row_number": 8797
+            },
+            "_id": "68321e8db5e7c35393250069",
+            "upc": "n/a",
+            "__v": 0,
+            "createdAt": "2025-05-24T19:31:25.883Z",
+            "id": "8218",
+            "inventory_added_at": "2025-03-03T18:00:00.000Z",
+            "location": ["WBH1"],
+            "platforms_available": ["stockx", "goat"],
+            "product": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "styleId": "M20325"
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325",
+                    "name": "Stan Smith 'Core White'",
+                    "sku": "M20325",
+                    "product_category": "PRODUCT_CATEGORY_SHOES",
+                    "product_type": "sneakers"
+                },
+                "_id": "68329ade05f4dc596c90d021",
+                "title": "adidas Stan Smith Core White New Navy",
+                "brand": "adidas",
+                "normalizedStyleId": "M20325",
+                "styleId": "M20325",
+                "urlKey": "adidas-stan-smith-core-white-new-navy",
+                "productAttributes": {
+                    "color": null,
+                    "gender": "men",
+                    "releaseDate": "2022-12-14",
+                    "retailPrice": null,
+                    "season": null,
+                    "colorway": "Core White/Core White/New Navy",
+                    "category": "sneakers",
+                    "_id": "68329ade05f4dc596c90d022"
+                },
+                "platform": ["stockx", "goat"],
+                "createdAt": "2025-05-25T04:21:50.743Z",
+                "updatedAt": "2025-05-25T04:21:50.743Z",
+                "__v": 0
+            },
+            "quantity": 8,
+            "retail_price": 95,
+            "updatedAt": "2025-05-25T10:31:23.381Z",
+            "variant": {
+                "stockx": {
+                    "productId": "09bcc6eb-f827-40e6-a086-77e59e876098",
+                    "variantId": "9172c177-a6a4-4002-88b7-de8aea3a45e5",
+                    "variantName": "adidas-Stan-Smith-Core-White-New-Navy:16",
+                    "variantValue": "12",
+                    "sizeChart": {
+                        "defaultConversion": {
+                            "size": "12",
+                            "type": "us m"
+                        },
+                        "availableConversions": [
+                            {
+                                "size": "US M 12",
+                                "type": "us m"
+                            },
+                            {
+                                "size": "UK 11.5",
+                                "type": "uk"
+                            },
+                            {
+                                "size": "CM 30",
+                                "type": "cm"
+                            },
+                            {
+                                "size": "KR 300",
+                                "type": "kr"
+                            },
+                            {
+                                "size": "EU 46 2/3",
+                                "type": "eu"
+                            },
+                            {
+                                "size": "US W 13",
+                                "type": "us w"
+                            }
+                        ]
+                    }
+                },
+                "goat": {
+                    "catalog_id": "stan-smith-shoes-m20325"
+                },
+                "_id": "68329adfb5e7c35393255531",
+                "product": "68329ade05f4dc596c90d021",
+                "__v": 0,
+                "createdAt": "2025-05-25T04:21:51.859Z",
+                "styleId": "M20325",
+                "updatedAt": "2025-05-25T04:22:14.302Z"
+            }
+        }
+    ]
+}
