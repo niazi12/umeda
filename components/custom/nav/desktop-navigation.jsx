@@ -11,13 +11,15 @@ import {
       <NavigationMenu className="hidden lg:flex">
         <NavigationMenuList className="space-x-2">
           {/* Main Navigation Items */}
-          {navigationData.navigation.map((item) => (
-            <NavigationItem
-              key={item.name}
-              name={item.name}
-              href={item.href}
-            />
-          ))}
+          {navigationData.navigation
+            .filter((item) => item.name !== "Contact")
+            .map((item) => (
+              <NavigationItem
+                key={item.name}
+                name={item.name}
+                href={item.href}
+              />
+            ))}
   
           {/* Services Mega Menu */}
           {/* <MegaMenu
