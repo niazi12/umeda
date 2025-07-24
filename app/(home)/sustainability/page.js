@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
+import { PageHero } from "@/components/custom/ui/page-hero";
 import { 
   Leaf, 
   Recycle, 
@@ -100,22 +101,12 @@ export default function SustainabilityPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section padding="lg" className="bg-blue-900 text-white">
-        <div className="max-w-4xl mx-auto text-center space-y-8 fade-in">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <Leaf size={32} className="text-primary-foreground" />
-            <Heading level={1} size="4xl">{heroData.title}</Heading>
-          </div>
-          <p className="text-xl md:text-2xl leading-relaxed opacity-90">
-            {heroData.subtitle}
-          </p>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 inline-block">
-            <p className="text-primary-foreground font-medium">
-              "{heroData.tagline}"
-            </p>
-          </div>
-        </div>
-      </Section>
+              <PageHero
+          title={heroData.title}
+          description={heroData.subtitle}
+          tagline={heroData.tagline}
+          variant="forest"
+        />
 
       {/* Sustainable Materials */}
       <Section padding="lg">

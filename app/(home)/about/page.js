@@ -1,6 +1,7 @@
 import { Building2, Users, Award, Target, Globe, Zap } from "lucide-react";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
+import { PageHero } from "@/components/custom/ui/page-hero";
 
 
 export default function About() {
@@ -62,49 +63,19 @@ export default function About() {
     return (
       <>
         {/* Hero Section */}
-        <Section padding="xl" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 relative overflow-hidden">
-          {/* Background Pattern */}
-          <div className="absolute inset-0 opacity-20">
-            <div className="w-full h-full bg-repeat" style={{
-              backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-            }}></div>
-          </div>
-          
-          <div className="relative z-10 space-y-8 text-center">
-            <div className="space-y-6">
-              <Heading level={1} size="3xl" className="text-white">
-                About UMEDA SB Industries
-              </Heading>
-              <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
-                A Bangladesh Korea joint venture private limited company dedicated to professional 
-                business-to-business solutions in socks manufacturing for the global market.
-              </p>
-            </div>
-            
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 inline-block border border-white/20">
-              <p className="text-2xl text-white font-medium italic">
-                "Being smart is the new business plan."
-              </p>
-              <p className="text-blue-200 text-sm mt-2">— UMEDA SB Industries</p>
-            </div>
-
-            {/* Stats Row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto pt-8">
-              <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-white">6.24M+</div>
-                <div className="text-blue-200 text-sm">Annual Capacity</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-white">3+</div>
-                <div className="text-blue-200 text-sm">Export Markets</div>
-              </div>
-              <div className="bg-white/10 backdrop-blur rounded-xl p-4 border border-white/20">
-                <div className="text-3xl font-bold text-white">B2B</div>
-                <div className="text-blue-200 text-sm">Focused Solutions</div>
-              </div>
-            </div>
-          </div>
-        </Section>
+        <PageHero
+          title="About UMEDA SB Industries"
+          description="A Bangladesh Korea joint venture private limited company dedicated to professional business-to-business solutions in socks manufacturing for the global market."
+          tagline={`"Being smart is the new business plan." — UMEDA SB Industries`}
+          stats={[
+            { value: "6.24M+", label: "Annual Capacity", iconName: "factory" },
+            { value: "3+", label: "Export Markets", iconName: "globe" },
+            { value: "B2B", label: "Focused Solutions", iconName: "target" }
+          ]}
+          variant="ocean"
+          backgroundImage="/assets/gallery/quality-control.jpg"
+          // showWave={true}
+        />
   
         {/* Mission & Vision */}
         <Section className="bg-gray-50 dark:bg-gray-900" padding="xl">

@@ -24,14 +24,6 @@ export function TabsWrapper({
         ghost: "bg-transparent",
     };
 
-    const triggerVariants = {
-        default: "data-[state=active]:bg-primary/10 data-[state=active]:text-primary",
-        primary: "data-[state=active]:bg-primary data-[state=active]:text-primary-foreground",
-        secondary: "data-[state=active]:bg-secondary data-[state=active]:text-secondary-foreground",
-        outline: "data-[state=active]:bg-accent data-[state=active]:text-accent-foreground",
-        ghost: "data-[state=active]:bg-accent/50 data-[state=active]:text-accent-foreground",
-    };
-
     return (
         <Tabs
             defaultValue={defaultValue}

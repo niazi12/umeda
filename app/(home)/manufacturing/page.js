@@ -3,14 +3,15 @@ import { CardWrapper } from "@/components/custom/ui/card-wrapper";
 import { Factory, Cog, BarChart3, Clock, Award, Users, Zap, Target, Layers, Shield, Gauge } from "lucide-react";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
+import { PageHero } from "@/components/custom/ui/page-hero";
 import Link from "next/link";
 
 export default function ManufacturingPage() {
   // Hero statistics data
   const heroStats = [
-    { value: "6.24M+", label: "Total Annual Capacity", icon: Factory },
-    { value: "100%", label: "Quality Assured", icon: Award },
-    { value: "3", label: "Export Markets", icon: Target }
+    { value: "6.24M+", label: "Total Annual Capacity", iconName: "factory" },
+    { value: "100%", label: "Quality Assured", iconName: "award" },
+    { value: "3", label: "Export Markets", iconName: "target" }
   ];
 
   // Production capabilities data
@@ -115,41 +116,13 @@ export default function ManufacturingPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section padding="xl" className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 text-white relative overflow-hidden">
-        {/* Background Pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="w-full h-full bg-repeat" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.2'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-          }}></div>
-        </div>
-
-        <div className="relative z-10 max-w-5xl mx-auto text-center space-y-10">
-          <div className="space-y-6">
-            <Heading level={1} size="3xl" className="text-white">
-              Manufacturing Excellence
-            </Heading>
-            <p className="text-xl md:text-2xl leading-relaxed text-blue-100 max-w-4xl mx-auto">
-              State-of-the-art facility engineered for precision, quality, and
-              scale. Our advanced manufacturing capabilities deliver 6.24+
-              million pairs annually.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {heroStats.map((stat, index) => (
-              <div key={index} className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300">
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                    <stat.icon size={24} className="text-white" />
-                  </div>
-                </div>
-                <div className="text-3xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-blue-200">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </Section>
+      <PageHero
+        title="Manufacturing Excellence"
+        description="State-of-the-art facility engineered for precision, quality, and scale. Our advanced manufacturing capabilities deliver 6.24+ million pairs annually."
+        stats={heroStats}
+        backgroundImage="/assets/hero-manufacturing.jpg"
+        variant="image"
+      />
 
       {/* Production Capabilities */}
       <Section className="bg-gray-50 dark:bg-gray-900" padding="xl">

@@ -4,6 +4,7 @@ import { X, ZoomIn, Download, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
+import { PageHero } from "@/components/custom/ui/page-hero";
 
 export default function MediaPage() {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -107,19 +108,12 @@ export default function MediaPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section padding="lg" className="bg-blue-900 text-white">
-        <div className="max-w-4xl mx-auto text-center space-y-8 fade-in">
-          <Heading level={1} size="4xl">{heroData.title}</Heading>
-          <p className="text-xl md:text-2xl leading-relaxed opacity-90">
-            {heroData.description}
-          </p>
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 inline-block">
-            <p className="text-primary-foreground font-medium">
-              {heroData.tagline}
-            </p>
-          </div>
-        </div>
-      </Section>
+              <PageHero
+          title={heroData.title}
+          description={heroData.description}
+          tagline={heroData.tagline}
+          variant="aurora"
+        />
 
       {/* Gallery Section */}
       <Section padding="lg">

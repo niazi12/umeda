@@ -3,6 +3,7 @@ import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
+import { PageHero } from "@/components/custom/ui/page-hero";
 import { DynamicTabs, TabContent } from "@/components/custom/ui/tabs-wrapper";
 import { Palette, Layers, Target, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
@@ -291,31 +292,12 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero Section */}
-      <Section padding="lg" className="bg-blue-900 text-white">
-        <div className="max-w-4xl mx-auto text-center space-y-8 fade-in">
-          <Heading level={1} size="4xl">{heroData.title}</Heading>
-          <p className="text-xl md:text-2xl leading-relaxed opacity-90">
-            {heroData.description}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            {heroData.buttons.map((button, index) => (
-              <Button 
-                key={index}
-                asChild 
-                size="lg" 
-                variant={button.variant === "outline" ? "outline" : "default"}
-                className={
-                  button.variant === "outline" 
-                    ? "border-white text-black hover:bg-white hover:text-primary"
-                    : "bg-white text-primary hover:bg-white/90"
-                }
-              >
-                <Link href={button.href}>{button.text}</Link>
-              </Button>
-            ))}
-          </div>
-        </div>
-      </Section>
+              <PageHero
+          title={heroData.title}
+          description={heroData.description}
+          buttons={heroData.buttons}
+          variant="violet"
+        />
 
       {/* Product Categories */}
       <Section padding="lg">
