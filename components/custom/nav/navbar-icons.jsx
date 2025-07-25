@@ -11,7 +11,7 @@ export function NavbarIcons({
   return (
     <div className={cn("flex items-center gap-3 md:gap-4", className)}>
       {/* <ModeToggle /> */}
-      <Button variant="ghost" size="sm" asChild>
+      <Button variant="" size="sm" asChild>
         <Link href="/contact">
           <Icon name="phone" className="mr-2" size={16} />
           Contact

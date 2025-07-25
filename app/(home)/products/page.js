@@ -7,6 +7,8 @@ import { PageHero } from "@/components/custom/ui/page-hero";
 import { DynamicTabs, TabContent } from "@/components/custom/ui/tabs-wrapper";
 import { Palette, Layers, Target, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
+import { Gallery4 } from "@/components/custom/ui/gallery4";
+import { galleryData } from "./gallery-data";
 
 export default function ProductsPage() {
   // Hero section data
@@ -297,10 +299,16 @@ export default function ProductsPage() {
           description={heroData.description}
           buttons={heroData.buttons}
           variant="violet"
+          backgroundImage="/assets/gallery/knitting-machine.jpg"
+        />
+
+        {/* Product gallery */}
+        <Gallery4
+         {...galleryData}
         />
 
       {/* Product Categories */}
-      <Section padding="lg">
+      <Section padding="md">
         <div className="text-center space-y-4 mb-16 fade-in">
           <Heading level={2} size="lg" className="text-primary">Our Product Range</Heading>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

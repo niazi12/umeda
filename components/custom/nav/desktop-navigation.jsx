@@ -9,7 +9,7 @@ import {
   export function DesktopNavigation() {
     return (
       <NavigationMenu className="hidden lg:flex">
-        <NavigationMenuList className="space-x-2">
+        <NavigationMenuList className="flex items-center justify-center space-x-1">
           {/* Main Navigation Items */}
           {navigationData.navigation
             .filter((item) => item.name !== "Contact")

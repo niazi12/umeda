@@ -28,23 +28,23 @@ export function Navbar({ user, token, isSeller, isAdmin }) {
 
   return (
     <>
-      {/* Fixed main navbar only */}
-      <header className="fixed top-0 left-0 right-0 z-50 w-full bg-background/95 border-b">
-        <nav className="h-16">
-          <div className="lg:container mx-auto px-4 h-full flex items-center justify-between">
-            {/* Left section: Logo and Location */}
-            <div className="flex items-center gap-3 flex-shrink-0 min-w-[140px]">
+      {/* Fixed main navbar with glassmorphism effect */}
+      <header className="fixed top-0 left-0 right-0 z-50 w-full">
+        <div className="absolute inset-0 bg-background/80 backdrop-blur-md border-b border-border/40"></div>
+        <nav className="relative h-20">
+          <div className="lg:container mx-auto px-6 h-full flex items-center justify-between">
+            {/* Left section: Logo */}
+            <div className="flex items-center gap-3 flex-shrink-0 min-w-[160px]">
               <Logo />
-     
             </div>
 
-            {/* Middle section: Search */}
-            <div className="hidden md:block flex-1 px-6 max-w-[650px]">
-            <DesktopNavigation />
+            {/* Middle section: Navigation */}
+            <div className="hidden md:block flex-1 px-8 max-w-[700px]">
+              <DesktopNavigation />
             </div>
 
-            {/* Right section: Cart, User and Menu */}
-            <div className="flex items-center justify-end gap-1 flex-shrink-0 min-w-[140px]">
+            {/* Right section: Contact and Menu */}
+            <div className="flex items-center justify-end gap-2 flex-shrink-0 min-w-[160px]">
               {isMobile ? (
                 <MobileNavbarIcons
                   user={user}
@@ -66,12 +66,11 @@ export function Navbar({ user, token, isSeller, isAdmin }) {
               )}
             </div>
           </div>
-     
         </nav>
       </header>
 
       {/* Spacer to account for fixed navbar */}
-      <div className="h-16"></div>
+      <div className="h-20"></div>
       
 
       {/* Categories section - scrolls with page in both desktop and mobile */}

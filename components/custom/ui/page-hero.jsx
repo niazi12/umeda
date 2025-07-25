@@ -33,6 +33,7 @@ const gradients = {
   forest: "from-emerald-600 via-green-600 to-teal-700",
   midnight: "from-gray-900 via-blue-900 to-indigo-900",
   violet: "from-violet-600 via-purple-600 to-indigo-700",
+  secondary: "bg-gradient-secondary"
 };
 
 export function PageHero({ 

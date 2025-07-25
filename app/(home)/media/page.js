@@ -112,7 +112,7 @@ export default function MediaPage() {
           title={heroData.title}
           description={heroData.description}
           tagline={heroData.tagline}
-          variant="aurora"
+          variant="secondary"
         />
 
       {/* Gallery Section */}
