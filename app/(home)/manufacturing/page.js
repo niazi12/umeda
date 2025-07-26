@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { CardWrapper } from "@/components/custom/ui/card-wrapper";
+import { PatternBackground } from "@/components/custom/ui/pattern-background";
 import { Factory, Cog, BarChart3, Clock, Award, Users, Zap, Target, Layers, Shield, Gauge } from "lucide-react";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
@@ -484,41 +485,35 @@ export default function ManufacturingPage() {
       </Section>
 
       {/* Call to Action */}
-      <Section padding="xl" className="bg-gradient-to-r from-primary via-primary/90 to-primary text-white relative overflow-hidden">
-        {/* Background decoration */}
-        <div className="absolute inset-0 opacity-20">
-          <div className="w-full h-full bg-repeat" style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M20 20c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10zm10 0c0-5.5-4.5-10-10-10s-10 4.5-10 10 4.5 10 10 10 10-4.5 10-10z'/%3E%3C/g%3E%3C/svg%3E")`
-          }}></div>
-        </div>
-
-        <div className="relative z-10 text-center space-y-8">
-          <Heading level={2} size="2xl" className="text-white">
-            Experience Our Manufacturing Excellence
-          </Heading>
-          <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto leading-relaxed">
-            Partner with UMEDA SB Industries for reliable, high-quality socks
-            manufacturing backed by advanced technology and proven expertise.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button
-              asChild
-              size="lg"
-              className="bg-white text-primary hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
-            >
-              <Link href="/contact">Start Partnership</Link>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105"
-            >
-              <Link href="/products">View Products</Link>
-            </Button>
+      <PatternBackground className="py-16" backgroundColor="bg-blue-600" rounded={false}>
+        <div className="container-width">
+          <div className="text-center space-y-8">
+            <Heading level={2} size="2xl" className="text-white">
+              Experience Our Manufacturing Excellence
+            </Heading>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed">
+              Partner with UMEDA SB Industries for reliable, high-quality socks
+              manufacturing backed by advanced technology and proven expertise.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-blue-700 hover:bg-gray-100 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg"
+              >
+                <Link href="/contact">Start Partnership</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105"
+              >
+                <Link href="/products">View Products</Link>
+              </Button>
+            </div>
           </div>
         </div>
-      </Section>
+      </PatternBackground>
     </>
   );
 }

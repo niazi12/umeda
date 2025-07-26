@@ -5,7 +5,7 @@ import { ArrowRight, Play } from "lucide-react";
 
 export function HeroSection() {
   return (
-    <section className="relative bg-gradient-minimal text-white overflow-hidden">
+    <section className="relative bg-gray-900 text-white overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0">
         <img 

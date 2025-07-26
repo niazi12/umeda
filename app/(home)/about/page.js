@@ -2,6 +2,8 @@ import { Building2, Users, Award, Target, Globe, Zap } from "lucide-react";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
 import { PageHero } from "@/components/custom/ui/page-hero";
+import { GlassCard, GlassCardTimeline } from "@/components/custom/ui/glass-card";
+import { GradientBackground } from "@/components/custom/ui/gradient-background";
 
 
 export default function About() {
@@ -184,43 +186,30 @@ export default function About() {
         </Section>
   
         {/* Our Journey */}
-        <Section className="bg-gradient-to-br from-gray-900 to-gray-800" padding="xl">
-          <div className="text-center space-y-6 mb-16">
-            <Heading level={2} size="2xl" className="text-white">Our Journey</Heading>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Key milestones that shaped UMEDA SB Industries into a trusted global partner
-            </p>
-          </div>
+        <GradientBackground gradient="from-gray-900 to-gray-800" padding="xl">
+          <div className="container-width">
+            <div className="text-center space-y-6 mb-16">
+              <Heading level={2} size="2xl" className="text-white">Our Journey</Heading>
+              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+                Key milestones that shaped UMEDA SB Industries into a trusted global partner
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {milestones.map((milestone, index) => (
-              <div key={index} className="relative group">
-                <div className="bg-white/10 backdrop-blur border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all duration-300 hover:scale-105">
-                  <div className="space-y-6">
-                    <div className="flex items-center justify-between">
-                      <div className={`w-12 h-12 bg-gradient-to-r ${milestone.gradient} rounded-xl flex items-center justify-center shadow-lg`}>
-                        <span className="text-lg font-bold text-white">{index + 1}</span>
-                      </div>
-                      <div className="text-sm font-medium text-gray-300 bg-white/10 px-3 py-1 rounded-full">
-                        {milestone.year}
-                      </div>
-                    </div>
-                    <div className="space-y-3">
-                      <h3 className="font-semibold text-white text-lg">{milestone.title}</h3>
-                      <p className="text-gray-300 leading-relaxed">
-                        {milestone.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                {/* Connection line for desktop */}
-                {index < milestones.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 w-8 h-0.5 bg-gradient-to-r from-white/30 to-transparent"></div>
-                )}
-              </div>
-            ))}
+            <GlassCardTimeline>
+              {milestones.map((milestone, index) => (
+                <GlassCard
+                  key={index}
+                  number={index + 1}
+                  year={milestone.year}
+                  title={milestone.title}
+                  description={milestone.description}
+                  gradient={milestone.gradient}
+                  showConnector={index < milestones.length - 1}
+                />
+              ))}
+            </GlassCardTimeline>
           </div>
-        </Section>
+        </GradientBackground>
 
          {/* Contact CTA */}
         <Section padding="xl" className="bg-gradient-to-r from-primary via-primary/90 to-primary text-white relative overflow-hidden">

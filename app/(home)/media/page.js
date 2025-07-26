@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import { X, ZoomIn, Download, Share2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -12,8 +12,9 @@ export default function MediaPage() {
   // Hero section data
   const heroData = {
     title: "Media Gallery",
-    description: "Explore UMEDA SB Industries through our visual journey. From advanced manufacturing processes to premium product showcases - witness our commitment to excellence.",
-    tagline: "Showcasing 6.24M+ pairs of annual manufacturing excellence"
+    description:
+      "Explore UMEDA SB Industries through our visual journey. From advanced manufacturing processes to premium product showcases - witness our commitment to excellence.",
+    tagline: "Showcasing 6.24M+ pairs of annual manufacturing excellence",
   };
 
   // Gallery images data
@@ -21,76 +22,86 @@ export default function MediaPage() {
     {
       src: "/assets/gallery/manufacturing-facility.jpg",
       title: "Manufacturing Facility",
-      description: "State-of-the-art production floor with advanced knitting machinery",
-      category: "Facility"
+      description:
+        "State-of-the-art production floor with advanced knitting machinery",
+      category: "Facility",
     },
     {
       src: "/assets/gallery/knitting-machine.jpg",
       title: "Advanced Knitting Technology",
       description: "Close-up of our precision knitting machines in action",
-      category: "Technology"
+      category: "Technology",
     },
     {
       src: "/assets/gallery/premium-socks.jpg",
       title: "Premium Product Range",
       description: "High-quality socks showcasing our manufacturing excellence",
-      category: "Products"
+      category: "Products",
     },
     {
       src: "/assets/gallery/quality-control.jpg",
       title: "Quality Assurance",
-      description: "Rigorous quality control ensures every pair meets our standards",
-      category: "Quality"
+      description:
+        "Rigorous quality control ensures every pair meets our standards",
+      category: "Quality",
     },
     {
       src: "/assets/gallery/warehouse-export.jpg",
       title: "Export Operations",
       description: "Organized warehouse ready for global distribution",
-      category: "Logistics"
+      category: "Logistics",
     },
     {
       src: "/assets/gallery/design-team.jpg",
       title: "Design Innovation",
       description: "Our creative team developing new sock designs and patterns",
-      category: "Design"
+      category: "Design",
     },
     {
       src: "/assets/gallery/raw-materials.jpg",
       title: "Premium Materials",
       description: "High-quality raw materials imported from trusted suppliers",
-      category: "Materials"
+      category: "Materials",
     },
     {
       src: "/assets/gallery/packaging-process.jpg",
       title: "Professional Packaging",
       description: "Custom branding and packaging for B2B clients",
-      category: "Branding"
-    }
+      category: "Branding",
+    },
   ];
 
   // Gallery statistics data
   const galleryStats = [
     { value: galleryImages.length, label: "Gallery Images" },
-    { value: Array.from(new Set(galleryImages.map(img => img.category))).length, label: "Categories" },
+    {
+      value: Array.from(new Set(galleryImages.map((img) => img.category)))
+        .length,
+      label: "Categories",
+    },
     { value: "100%", label: "Quality Focus" },
-    { value: "24/7", label: "Production" }
+    { value: "24/7", label: "Production" },
   ];
 
-  const categories = ["All", ...Array.from(new Set(galleryImages.map(img => img.category)))];
+  const categories = [
+    "All",
+    ...Array.from(new Set(galleryImages.map((img) => img.category))),
+  ];
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredImages = activeCategory === "All" 
-    ? galleryImages 
-    : galleryImages.filter(img => img.category === activeCategory);
+  const filteredImages =
+    activeCategory === "All"
+      ? galleryImages
+      : galleryImages.filter((img) => img.category === activeCategory);
 
   const openLightbox = (index) => {
     setSelectedImage(index);
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflow = "hidden";
   };
 
   const closeLightbox = () => {
     setSelectedImage(null);
-    document.body.style.overflow = 'unset';
+    document.body.style.overflow = "unset";
   };
 
   const nextImage = () => {
@@ -101,19 +112,21 @@ export default function MediaPage() {
 
   const prevImage = () => {
     if (selectedImage !== null) {
-      setSelectedImage(selectedImage === 0 ? filteredImages.length - 1 : selectedImage - 1);
+      setSelectedImage(
+        selectedImage === 0 ? filteredImages.length - 1 : selectedImage - 1
+      );
     }
   };
 
   return (
     <>
       {/* Hero Section */}
-              <PageHero
-          title={heroData.title}
-          description={heroData.description}
-          tagline={heroData.tagline}
-          variant="secondary"
-        />
+      <PageHero
+        title={heroData.title}
+        description={heroData.description}
+        tagline={heroData.tagline}
+        gradient="default"
+      />
 
       {/* Gallery Section */}
       <Section padding="lg">
@@ -125,8 +138,8 @@ export default function MediaPage() {
               variant={activeCategory === category ? "default" : "outline"}
               onClick={() => setActiveCategory(category)}
               className={`transition-all duration-300 ${
-                activeCategory === category 
-                  ? "bg-primary text-primary-foreground" 
+                activeCategory === category
+                  ? "bg-primary text-primary-foreground"
                   : "hover:border-primary hover:text-primary"
               }`}
             >
@@ -151,7 +164,7 @@ export default function MediaPage() {
                   loading="lazy"
                 />
               </div>
-              
+
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
@@ -162,7 +175,9 @@ export default function MediaPage() {
                     <ZoomIn size={18} className="text-white/80" />
                   </div>
                   <h3 className="font-semibold text-sm mb-1">{image.title}</h3>
-                  <p className="text-xs text-white/80 line-clamp-2">{image.description}</p>
+                  <p className="text-xs text-white/80 line-clamp-2">
+                    {image.description}
+                  </p>
                 </div>
               </div>
             </div>
@@ -172,17 +187,24 @@ export default function MediaPage() {
         {/* Stats Section */}
         <div className="mt-16 bg-gradient-card rounded-2xl p-8">
           <div className="text-center space-y-4 mb-8">
-            <Heading level={3} size="md" className="text-primary">Visual Excellence</Heading>
+            <Heading level={3} size="md" className="text-primary">
+              Visual Excellence
+            </Heading>
             <p className="text-muted-foreground">
-              Our gallery showcases the dedication and precision behind every pair of socks we manufacture
+              Our gallery showcases the dedication and precision behind every
+              pair of socks we manufacture
             </p>
           </div>
-          
+
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {galleryStats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-2xl font-bold text-primary mb-2">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
+                <div className="text-2xl font-bold text-primary mb-2">
+                  {stat.value}
+                </div>
+                <div className="text-sm text-muted-foreground">
+                  {stat.label}
+                </div>
               </div>
             ))}
           </div>
@@ -191,7 +213,7 @@ export default function MediaPage() {
 
       {/* Lightbox Modal */}
       {selectedImage !== null && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/95 z-50 flex items-center justify-center p-4"
           onClick={closeLightbox}
         >
@@ -218,7 +240,7 @@ export default function MediaPage() {
             >
               ←
             </Button>
-            
+
             <Button
               variant="ghost"
               size="icon"
@@ -232,13 +254,16 @@ export default function MediaPage() {
             </Button>
 
             {/* Image */}
-            <div className="relative max-w-full max-h-full" onClick={(e) => e.stopPropagation()}>
+            <div
+              className="relative max-w-full max-h-full"
+              onClick={(e) => e.stopPropagation()}
+            >
               <img
                 src={filteredImages[selectedImage].src}
                 alt={filteredImages[selectedImage].title}
                 className="max-w-full max-h-[80vh] object-contain"
               />
-              
+
               {/* Image Info */}
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                 <div className="flex items-center justify-between mb-2">
@@ -246,16 +271,28 @@ export default function MediaPage() {
                     {filteredImages[selectedImage].category}
                   </span>
                   <div className="flex items-center space-x-2">
-                    <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="text-white hover:bg-white/20"
+                    >
                       <Download size={18} />
                     </Button>
-                    <Button variant="ghost" size="icon" className="text-white hover:bg-white/20">
+                    <Button
+                      variant="ghost"
+                      size="icon"
+                      className="text-white hover:bg-white/20"
+                    >
                       <Share2 size={18} />
                     </Button>
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold mb-2">{filteredImages[selectedImage].title}</h3>
-                <p className="text-white/80">{filteredImages[selectedImage].description}</p>
+                <h3 className="text-xl font-semibold mb-2">
+                  {filteredImages[selectedImage].title}
+                </h3>
+                <p className="text-white/80">
+                  {filteredImages[selectedImage].description}
+                </p>
                 <p className="text-sm text-white/60 mt-2">
                   {selectedImage + 1} of {filteredImages.length}
                 </p>

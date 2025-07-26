@@ -4,6 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import { Section } from "@/components/custom/ui/section";
 import { Heading } from "@/components/custom/ui/heading";
 import { PageHero } from "@/components/custom/ui/page-hero";
+import { PatternBackground } from "@/components/custom/ui/pattern-background";
 import { DynamicTabs, TabContent } from "@/components/custom/ui/tabs-wrapper";
 import { Palette, Layers, Target, Sparkles, ArrowRight, CheckCircle } from "lucide-react";
 import Link from "next/link";
@@ -451,23 +452,31 @@ export default function ProductsPage() {
       </Section>
 
       {/* Call to Action */}
-      <Section padding="lg" className="bg-gradient-secondary text-white">
-        <div className="text-center space-y-8 fade-in">
-          <Heading level={2} size="lg">Ready to Start Your Project?</Heading>
-          <p className="text-xl opacity-90 max-w-2xl mx-auto">
-            Let's discuss your socks manufacturing needs. Our team is ready to provide 
-            comprehensive solutions tailored to your specific requirements.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-primary hover:bg-white/90">
-              <Link href="/contact">Get Custom Quote</Link>
-            </Button>
-            <Button asChild size="lg" variant="glass" >
-              <Link href="/manufacturing">Tour Our Facility</Link>
-            </Button>
+      <PatternBackground 
+        className="py-12" 
+        backgroundColor="bg-indigo-600" 
+        variant="minimal" 
+        patternOpacity="0.06"
+        rounded={false}
+      >
+        <div className="container-width">
+          <div className="text-center space-y-8 fade-in">
+            <Heading level={2} size="lg">Ready to Start Your Project?</Heading>
+            <p className="text-xl text-white/90 max-w-2xl mx-auto">
+              Let's discuss your socks manufacturing needs. Our team is ready to provide 
+              comprehensive solutions tailored to your specific requirements.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-white text-indigo-600 hover:bg-indigo-50 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg">
+                <Link href="/contact">Get Custom Quote</Link>
+              </Button>
+              <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-indigo-600 font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105">
+                <Link href="/manufacturing">Tour Our Facility</Link>
+              </Button>
+            </div>
           </div>
         </div>
-      </Section>
+      </PatternBackground>
     </>
   );
 }

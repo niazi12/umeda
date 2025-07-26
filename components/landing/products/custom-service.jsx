@@ -1,94 +1,109 @@
 import { Palette, Zap, Sparkles, ArrowRight, Layers } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { PatternBackground } from "@/components/custom/ui/pattern-background";
 import Link from "next/link";
 
 export const CustomService = () => {
+  const services = [
+    {
+      icon: Sparkles,
+      title: "Design Consultation",
+      description: "Professional design consultation and visualization services"
+    },
+    {
+      icon: Layers,
+      title: "Pre-Production Approval", 
+      description: "Complete design approval before manufacturing begins"
+    },
+    {
+      icon: Zap,
+      title: "Rapid Prototyping",
+      description: "Quick turnaround for design samples and testing"
+    }
+  ];
+
   return (
-    <div className="bg-gradient-secondary rounded-2xl p-8 text-white relative overflow-hidden">
-      <div className="relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="space-y-6">
-            <div className="space-y-3">
-              <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center">
-                  <Palette size={24} className="text-white" />
-                </div>
-                <h3 className="heading-md text-white">
+    <PatternBackground className="p-8" backgroundColor="bg-emerald-800">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="space-y-8">
+          {/* Header */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-4">
+              <div className="w-14 h-14 bg-white/20 backdrop-blur-sm rounded-xl flex items-center justify-center">
+                <Palette size={28} className="text-white" />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-white">
                   Custom Design Services
                 </h3>
-              </div>
-              <p className="text-white/90 text-lg">
-                Transform your ideas into reality with our comprehensive design
-                services. Our expert team works with you from concept to
-                production, ensuring your vision becomes a high-quality product.
-              </p>
-            </div>
-
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mt-0.5">
-                  <Sparkles size={16} className="text-white" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-white">
-                    Design Consultation
-                  </h4>
-                  <p className="text-sm text-white/80">
-                    Professional design consultation and visualization services
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mt-0.5">
-                  <Layers size={16} className="text-white" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-white">
-                    Pre-Production Approval
-                  </h4>
-                  <p className="text-sm text-white/80">
-                    Complete design approval before manufacturing begins
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center mt-0.5">
-                  <Zap size={16} className="text-white" />
-                </div>
-                <div>
-                  <h4 className="font-medium text-white">Rapid Prototyping</h4>
-                  <p className="text-sm text-white/80">
-                    Quick turnaround for design samples and testing
-                  </p>
-                </div>
+                <p className="text-sm text-emerald-100 font-medium">
+                  From Concept to Production
+                </p>
               </div>
             </div>
+            <p className="text-emerald-50 text-lg leading-relaxed">
+              Transform your ideas into reality with our comprehensive design
+              services. Our expert team works with you from concept to
+              production, ensuring your vision becomes a high-quality product.
+            </p>
           </div>
 
-          <div className="text-center lg:text-right">
-            <Button
-              asChild
-              size="lg"
-              className="bg-white text-primary hover:bg-white/90 group shadow-lg w-full sm:w-auto"
+          {/* Services List */}
+          <div className="space-y-4">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <div key={index} className="flex items-start space-x-4 group">
+                  <div className="w-10 h-10 bg-white/15 rounded-lg flex items-center justify-center group-hover:bg-white/25 transition-colors duration-300">
+                    <Icon size={18} className="text-white group-hover:text-emerald-100 transition-colors duration-300" />
+                  </div>
+                  <div className="flex-1">
+                    <h4 className="font-semibold text-white mb-1">
+                      {service.title}
+                    </h4>
+                    <p className="text-sm text-emerald-100 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* CTA Section */}
+        <div className="text-center lg:text-right space-y-6">
+          <div className="space-y-3">
+            <h4 className="text-xl font-semibold text-white">
+              Ready to Start Your Project?
+            </h4>
+            <p className="text-emerald-100">
+              Explore our complete range of products and services
+            </p>
+          </div>
+          
+          <Button
+            asChild
+            size="lg"
+            className="bg-white text-emerald-600 hover:bg-emerald-50 group shadow-lg w-full sm:w-auto font-semibold"
+          >
+            <Link
+              href="/products"
+              className="flex items-center justify-center"
             >
-              <Link
-                href="/products"
-                className="flex items-center justify-center"
-              >
-                <span>View All Products & Services</span>
-                <ArrowRight
-                  className="ml-2 group-hover:translate-x-1 transition-transform"
-                  size={20}
-                />
-              </Link>
-            </Button>
-          </div>
+              <span>View All Products & Services</span>
+              <ArrowRight
+                className="ml-2 group-hover:translate-x-1 transition-transform"
+                size={20}
+              />
+            </Link>
+          </Button>
         </div>
       </div>
 
-      {/* Decorative elements */}
-      <div className="absolute top-8 right-8 w-20 h-20 bg-white/5 rounded-full blur-xl"></div>
-      <div className="absolute bottom-8 left-8 w-28 h-28 bg-white/5 rounded-full blur-xl"></div>
-    </div>
+      {/* Subtle decorative elements */}
+      <div className="absolute top-4 right-4 w-24 h-24 bg-white/10 rounded-full blur-2xl opacity-60"></div>
+      <div className="absolute bottom-4 left-4 w-32 h-32 bg-white/5 rounded-full blur-3xl opacity-40"></div>
+    </PatternBackground>
   );
 };
